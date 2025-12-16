@@ -1,0 +1,52 @@
+.navbar {
+  background: #1e293b;
+  color: white;
+  padding: 0.8rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  // ✅ This pushes left & right apart
+  width: 100%;                     // ✅ Full width
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .navbar-logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;   // spacing between links
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: #f0f0f0;
+        border-bottom: 2px solid white;
+      }
+    }
+
+    .signup-btn {
+      background: white;
+      color: #2DA8F8 !important;
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-weight: 500;
+
+      &:hover {
+        background: #f8f8f8;
+      }
+    }
+  }
+}

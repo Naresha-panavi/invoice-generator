@@ -1,0 +1,55 @@
+import { ProductLine, Invoice } from './types'
+
+export const initialProductLine: ProductLine = {
+  description: '',
+  quantity: '1',
+  rate: '0.00',
+}
+
+export const initialInvoice: Invoice = {
+  logo: '',
+  logoWidth: 100,
+  title: 'INVOICE',
+  companyName: 'Shades Designers',
+  companyGSTIN: 'GSTIN : 29ADTFS441R1ZZ',
+  companyAddress: '#542,3rd floor,3rd Block, 2nd Stage,Next to BDA complex ',
+  companyAddress2: 'Naagarabhaavi,Bengaluru,Karnataka-560072',
+  billTo: 'Bill To:',
+  clientName: '',
+  clientGSTIN: '',
+  clientAddress: '',
+  clientAddress2: '',
+  invoiceTitleLabel: 'Invoice#',
+  invoiceTitle: '',
+  invoiceDateLabel: 'Invoice Date',
+  invoiceDate: '',
+  invoiceDueDateLabel: 'Due Date',
+  invoiceDueDate: '',
+  productLineDescription: 'Item Description',
+  productLineQuantity: 'Qty',
+  productLineQuantityRate: 'Rate',
+  productLineQuantityAmount: 'Amount',
+  productLines: [
+    {
+      description: 'Brochure Design',
+      quantity: '2',
+      rate: '100.00',
+    },
+    { ...initialProductLine },
+    { ...initialProductLine },
+  ],
+  subTotalLabel: 'Sub Total',
+  cgstLabel: 'CGST Tax (9%)',
+  sgstLabel: 'SGST Tax (9%)',
+  discountLabel: 'Discount (0%)',
+  totalLabel: 'TOTAL',
+  currency: '$',
+  notesLabel: 'Notes',
+  notes: 'It was great doing business with you.',
+  termLabel: 'Terms & Conditions',
+  term: 'Please make the payment by the due date.',
+  website:'https://shadesdesigners.in',
+  email:'inf@shadesdesigners.in',
+  contactNumber:'+91-9611392880/+91-7760055303',
+
+}
